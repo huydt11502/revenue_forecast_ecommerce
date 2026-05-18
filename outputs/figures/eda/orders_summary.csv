@@ -1,0 +1,9 @@
+table,column,dtype,null_count,null_pct,unique,sample
+orders,order_id,int64,0,0.0,646945,1
+orders,order_date,object,0,0.0,3833,2012-07-04
+orders,customer_id,int64,0,0.0,90246,58578
+orders,zip,int64,0,0.0,29932,1109
+orders,order_status,object,0,0.0,6,delivered
+orders,payment_method,object,0,0.0,5,credit_card
+orders,device_type,object,0,0.0,3,desktop
+orders,order_source,object,0,0.0,6,paid_search

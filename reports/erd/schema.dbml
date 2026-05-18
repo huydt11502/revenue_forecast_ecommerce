@@ -1,0 +1,129 @@
+// ERD - He thong Thuong mai dien tu Thoi trang
+// Dan toan bo noi dung nay vao https://dbdiagram.io de xuat anh ERD
+
+Table geography {
+  zip int [pk]
+  city varchar
+  region varchar
+  district varchar
+}
+
+Table customers {
+  customer_id int [pk]
+  zip int [ref: > geography.zip]
+  city varchar
+  signup_date date
+  gender varchar
+  age_group varchar
+  acquisition_channel varchar
+}
+
+Table products {
+  product_id int [pk]
+  product_name varchar
+  category varchar
+  segment varchar
+  size varchar
+  color varchar
+  price float
+  cogs float
+}
+
+Table promotions {
+  promo_id varchar [pk]
+  promo_name varchar
+  promo_type varchar
+  discount_value float
+  start_date date
+  end_date date
+  applicable_category varchar
+  promo_channel varchar
+  stackable_flag int
+  min_order_value float
+}
+
+Table orders {
+  order_id int [pk]
+  order_date date
+  customer_id int [ref: > customers.customer_id]
+  zip int [ref: > geography.zip]
+  order_status varchar
+  payment_method varchar
+  device_type varchar
+  order_source varchar
+}
+
+Table order_items {
+  order_id int [ref: > orders.order_id]
+  product_id int [ref: > products.product_id]
+  quantity int
+  unit_price float
+  discount_amount float
+  promo_id varchar [ref: > promotions.promo_id]
+  promo_id_2 varchar [ref: > promotions.promo_id]
+}
+
+Table payments {
+  order_id int [ref: - orders.order_id]
+  payment_method varchar
+  payment_value float
+  installments int
+}
+
+Table shipments {
+  order_id int [ref: - orders.order_id]
+  ship_date date
+  delivery_date date
+  shipping_fee float
+}
+
+Table returns {
+  return_id varchar [pk]
+  order_id int [ref: > orders.order_id]
+  product_id int [ref: > products.product_id]
+  return_date date
+  return_reason varchar
+  return_quantity int
+  refund_amount float
+}
+
+Table reviews {
+  review_id varchar [pk]
+  order_id int [ref: > orders.order_id]
+  product_id int [ref: > products.product_id]
+  customer_id int [ref: > customers.customer_id]
+  review_date date
+  rating int
+  review_title varchar
+}
+
+Table inventory {
+  snapshot_date date
+  product_id int [ref: > products.product_id]
+  stock_on_hand int
+  units_received int
+  units_sold int
+  stockout_days int
+  days_of_supply float
+  fill_rate float
+  stockout_flag int
+  overstock_flag int
+  reorder_flag int
+  sell_through_rate float
+}
+
+Table sales {
+  Date date [pk]
+  Revenue float
+  COGS float
+}
+
+Table web_traffic {
+  date date [pk, ref: - sales.Date]
+  sessions int
+  unique_visitors int
+  page_views int
+  bounce_rate float
+  avg_session_duration_sec float
+  traffic_source varchar
+}

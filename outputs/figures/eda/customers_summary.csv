@@ -1,0 +1,8 @@
+table,column,dtype,null_count,null_pct,unique,sample
+customers,customer_id,int64,0,0.0,121930,1
+customers,zip,int64,0,0.0,31491,15201
+customers,city,object,0,0.0,42,Hai Phong
+customers,signup_date,object,0,0.0,3941,2021-12-30
+customers,gender,object,0,0.0,3,Female
+customers,age_group,object,0,0.0,5,35-44
+customers,acquisition_channel,object,0,0.0,6,social_media

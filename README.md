@@ -1,0 +1,75 @@
+# Dự Báo Doanh Thu - Thương Mại Điện Tử Thời Trang
+
+Báo cáo kiến tập | Nguồn dữ liệu: Datathon 2026 - The Gridbreakers
+
+## Mô tả bài toán
+
+Doanh nghiệp thương mại điện tử thời trang tại Việt Nam cần dự báo doanh thu (Revenue) để tối ưu tồn kho, lập kế hoạch khuyến mãi và vận hành logistics.
+
+- **Train**: `sales.csv` — 04/07/2012 đến 31/12/2022
+- **Test**: `sales_test.csv` — 01/01/2023 đến 01/07/2024
+- **Metric**: MAE, RMSE (thấp hơn tốt hơn), R² (cao hơn tốt hơn)
+
+## Cấu trúc dự án
+
+```
+revenue-forecast-ecommerce/
+├── data/
+│   ├── raw/              # 15 CSV files gốc, không chỉnh sửa
+│   │   ├── master/       # products, customers, promotions, geography
+│   │   ├── transaction/  # orders, order_items, payments, shipments, returns, reviews
+│   │   ├── analytical/   # sales, sales_test, sample_submission
+│   │   └── operational/  # inventory, web_traffic
+│   └── processed/
+│       ├── cleaned/      # Data sau làm sạch
+│       └── features/     # Feature table cho modeling
+├── notebooks/            # Jupyter Notebooks — thực hiện theo thứ tự
+│   ├── 01_data_overview.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   ├── 03_eda_master.ipynb
+│   ├── 04_eda_operations.ipynb
+│   ├── 05_business_analysis.ipynb
+│   ├── 06_hypothesis_testing.ipynb
+│   ├── 07_feature_engineering.ipynb
+│   └── 08_modeling.ipynb
+├── src/                  # Utility functions tái sử dụng
+│   ├── data_loader.py
+│   ├── preprocessing.py
+│   ├── feature_engineering.py
+│   └── evaluation.py
+├── outputs/
+│   ├── figures/          # Biểu đồ export (PNG)
+│   ├── models/           # Model đã train (.pkl)
+│   └── submission.csv    # File nộp Kaggle
+├── reports/
+│   └── powerbi/          # File .pbix dashboards
+├── requirements.txt
+└── README.md
+```
+
+## Hướng dẫn chạy
+
+```bash
+# 1. Cài đặt thư viện
+pip install -r requirements.txt
+
+# 2. Chạy notebooks theo thứ tự từ 01 đến 08
+jupyter notebook
+```
+
+## Quy trình phân tích (CRISP-DM)
+
+| Bước | Notebook | Nội dung |
+|------|----------|----------|
+| Data Understanding | 01 | Tổng quan 15 bảng dữ liệu |
+| Data Preparation | 02 | Làm sạch, xử lý missing values |
+| EDA | 03, 04 | Phân tích Master & Operations |
+| Business Analysis | 05, 06 | KPIs, vấn đề cốt lõi, giả thuyết |
+| Modeling | 07, 08 | Feature engineering, train, evaluate |
+
+## Thành viên nhóm
+
+- Thành viên 1: ...
+- Thành viên 2: ...
+
+Giảng viên hướng dẫn: ...

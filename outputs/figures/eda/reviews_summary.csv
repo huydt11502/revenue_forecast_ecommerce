@@ -1,0 +1,8 @@
+table,column,dtype,null_count,null_pct,unique,sample
+reviews,review_id,object,0,0.0,113551,REV-0000001
+reviews,order_id,int64,0,0.0,111369,1
+reviews,product_id,int64,0,0.0,1412,2400
+reviews,customer_id,int64,0,0.0,48676,58578
+reviews,review_date,object,0,0.0,3825,2012-07-24
+reviews,rating,int64,0,0.0,5,5
+reviews,review_title,object,0,0.0,18,Highly recommend

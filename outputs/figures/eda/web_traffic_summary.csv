@@ -1,0 +1,8 @@
+table,column,dtype,null_count,null_pct,unique,sample
+web_traffic,date,object,0,0.0,3652,2013-01-01
+web_traffic,sessions,int64,0,0.0,3447,9760
+web_traffic,unique_visitors,int64,0,0.0,3382,7253
+web_traffic,page_views,int64,0,0.0,3620,39093
+web_traffic,bounce_rate,float64,0,0.0,261,0.00514
+web_traffic,avg_session_duration_sec,float64,0,0.0,1771,102.9
+web_traffic,traffic_source,object,0,0.0,6,organic_search

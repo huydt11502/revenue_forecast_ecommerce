@@ -1,0 +1,18 @@
+table,column,dtype,null_count,null_pct,unique,sample
+inventory,snapshot_date,object,0,0.0,126,2022-10-31
+inventory,product_id,int64,0,0.0,1624,1
+inventory,stock_on_hand,int64,0,0.0,1895,3
+inventory,units_received,int64,0,0.0,360,1
+inventory,units_sold,int64,0,0.0,303,1
+inventory,stockout_days,int64,0,0.0,29,2
+inventory,days_of_supply,float64,0,0.0,9289,90.0
+inventory,fill_rate,float64,0,0.0,29,0.9333
+inventory,stockout_flag,int64,0,0.0,2,1
+inventory,overstock_flag,int64,0,0.0,2,0
+inventory,reorder_flag,int64,0,0.0,1,0
+inventory,sell_through_rate,float64,0,0.0,4017,0.25
+inventory,product_name,object,0,0.0,1465,DragonWear MA-01
+inventory,category,object,0,0.0,4,Casual
+inventory,segment,object,0,0.0,8,All-weather
+inventory,year,int64,0,0.0,11,2022
+inventory,month,int64,0,0.0,12,10

@@ -1,0 +1,5 @@
+table,column,dtype,null_count,null_pct,unique,sample
+shipments,order_id,int64,0,0.0,566067,1
+shipments,ship_date,object,0,0.0,3831,2012-07-07
+shipments,delivery_date,object,0,0.0,3831,2012-07-11
+shipments,shipping_fee,float64,0,0.0,1856,1.37
