@@ -65,6 +65,13 @@ jupyter notebook
 | Business Analysis | 05 | KPIs, vấn đề cốt lõi|
 | Modeling | 06, 07 | STL decomposition, train, evaluate |
 
+## Quy trình phân tích (CRISP-DM)
+
+1. Kết quả phân tích EDA
+   
+2. Kết quả model
+<img width="1990" height="590" alt="image" src="https://github.com/user-attachments/assets/bc8c5c00-f9b0-46ce-8201-f0120ba4cde6" />
+ 
 ## Thành viên nhóm
 
 - Thành viên 1: Lê Quang Huy
