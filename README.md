@@ -6,9 +6,9 @@ Báo cáo kiến tập | Nguồn dữ liệu: Datathon 2026 - The Gridbreakers
 
 Doanh nghiệp thương mại điện tử thời trang tại Việt Nam cần dự báo doanh thu (Revenue) để tối ưu tồn kho, lập kế hoạch khuyến mãi và vận hành logistics.
 
-- **Train**: `sales.csv` — 04/07/2012 đến 31/12/2022
-- **Test**: `sales_test.csv` — 01/01/2023 đến 01/07/2024
-- **Metric**: MAE, RMSE (thấp hơn tốt hơn), R² (cao hơn tốt hơn)
+- **Train**: `sales.csv` — 04/07/2012 đến 31/12/2020
+- **Test**: `sales_test.csv` — 01/01/2021 đến 31/12/2022
+- **Metric**: MAE, RMSE, R², Adjusted R-Square
 
 ## Cấu trúc dự án
 
