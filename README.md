@@ -29,9 +29,8 @@ revenue-forecast-ecommerce/
 │   ├── 03_eda_master.ipynb
 │   ├── 04_eda_operations.ipynb
 │   ├── 05_business_analysis.ipynb
-│   ├── 06_hypothesis_testing.ipynb
-│   ├── 07_feature_engineering.ipynb
-│   └── 08_modeling.ipynb
+│   ├── 06_time_series_decomposition.ipynb
+│   ├── 07_modeling.ipynb
 ├── src/                  # Utility functions tái sử dụng
 │   ├── data_loader.py
 │   ├── preprocessing.py
@@ -39,8 +38,7 @@ revenue-forecast-ecommerce/
 │   └── evaluation.py
 ├── outputs/
 │   ├── figures/          # Biểu đồ export (PNG)
-│   ├── models/           # Model đã train (.pkl)
-│   └── submission.csv    # File nộp Kaggle
+│   
 ├── reports/
 │   └── powerbi/          # File .pbix dashboards
 ├── requirements.txt
@@ -64,12 +62,12 @@ jupyter notebook
 | Data Understanding | 01 | Tổng quan 15 bảng dữ liệu |
 | Data Preparation | 02 | Làm sạch, xử lý missing values |
 | EDA | 03, 04 | Phân tích Master & Operations |
-| Business Analysis | 05, 06 | KPIs, vấn đề cốt lõi, giả thuyết |
-| Modeling | 07, 08 | Feature engineering, train, evaluate |
+| Business Analysis | 05 | KPIs, vấn đề cốt lõi|
+| Modeling | 06, 07 | STL decomposition, train, evaluate |
 
 ## Thành viên nhóm
 
-- Thành viên 1: ...
-- Thành viên 2: ...
+- Thành viên 1: Lê Quang Huy
+- Thành viên 2: Nguyễn Tấn Trọng
 
-Giảng viên hướng dẫn: ...
+Giảng viên hướng dẫn: NCS.ThS Nguyễn Quang Phúc

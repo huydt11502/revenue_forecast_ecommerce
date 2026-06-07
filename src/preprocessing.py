@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from statsmodels.tsa.seasonal import STL
 
 
 def summarize(df: pd.DataFrame, name: str = "", verbose: bool = True) -> pd.DataFrame:
@@ -69,3 +70,35 @@ def remove_outliers_iqr(df: pd.DataFrame, col: str) -> pd.DataFrame:
     if removed > 0:
         print(f"Removed {removed} outliers in column '{col}'")
     return df[mask]
+
+def prepare_stl_dataframe(df_sales_cleaned):
+
+    stl_df = (
+        df_sales_cleaned[['date', 'revenue']]
+        .drop_duplicates(subset='date')
+        .sort_values('date')
+    )
+
+    stl_df['date'] = pd.to_datetime(
+        stl_df['date']
+    ).dt.normalize()
+
+    stl_df = (
+        stl_df
+        .set_index('date')
+        .asfreq('D')
+    )
+
+    if stl_df['revenue'].isna().sum() > 0:
+        stl_df['revenue'] = (
+            stl_df['revenue']
+            .interpolate(method='time')
+            .ffill()
+            .bfill()
+        )
+
+    stl_df['LogRevenue'] = np.log1p(
+        stl_df['revenue']
+    )
+
+    return stl_df
