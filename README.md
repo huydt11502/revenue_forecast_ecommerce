@@ -65,12 +65,16 @@ jupyter notebook
 | Business Analysis | 05 | KPIs, vấn đề cốt lõi|
 | Modeling | 06, 07 | STL decomposition, train, evaluate |
 
-## Quy trình phân tích (CRISP-DM)
-
+## Kết quả thực nghiệm
 1. Kết quả phân tích EDA
    
 2. Kết quả model
 <img width="1990" height="590" alt="image" src="https://github.com/user-attachments/assets/bc8c5c00-f9b0-46ce-8201-f0120ba4cde6" />
+- Prophet DUAN cho kết quả thấp nhất (R² ≈ 0.29), cho thấy hạn chế trong việc mô hình hóa quan hệ phi tuyến và dữ liệu phức tạp.
+- Nhóm Ensemble độc lập (đặc biệt CatBoost) đạt hiệu năng tốt nhất với R² ≈ 0.75, do khai thác trực tiếp toàn bộ không gian đặc trưng.
+- Nhóm Hybrid cải thiện so với Prophet nhưng vẫn kém hơn Ensemble độc lập vì chỉ học trên phần dư sau khi Prophet tách xu hướng và mùa vụ.
+
+3. Kết quả tổng thể dự án
  
 ## Thành viên nhóm
 
