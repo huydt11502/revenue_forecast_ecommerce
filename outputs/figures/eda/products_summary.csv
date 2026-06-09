@@ -1,9 +1,0 @@
-table,column,dtype,null_count,null_pct,unique,sample
-products,product_id,int64,0,0.0,2412,536
-products,product_name,object,0,0.0,2172,SaigonFlex UC-01
-products,category,object,0,0.0,4,Streetwear
-products,segment,object,0,0.0,8,Everyday
-products,size,object,0,0.0,4,S
-products,color,object,0,0.0,10,green
-products,price,float64,0,0.0,1990,11059.65
-products,cogs,float64,0,0.0,2381,9704.842875

@@ -1,5 +1,0 @@
-table,column,dtype,null_count,null_pct,unique,sample
-geography,zip,int64,0,0.0,39948,15201
-geography,city,object,0,0.0,42,Hai Phong
-geography,region,object,0,0.0,3,East
-geography,district,object,0,0.0,39,District #13

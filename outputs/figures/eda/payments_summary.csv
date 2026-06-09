@@ -1,5 +1,0 @@
-table,column,dtype,null_count,null_pct,unique,sample
-payments,order_id,int64,0,0.0,646945,1
-payments,payment_method,object,0,0.0,5,credit_card
-payments,payment_value,float64,0,0.0,595420,7967.54
-payments,installments,int64,0,0.0,5,3

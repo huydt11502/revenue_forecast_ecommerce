@@ -1,8 +1,0 @@
-table,column,dtype,null_count,null_pct,unique,sample
-order_items,order_id,int64,0,0.0,646945,1
-order_items,product_id,int64,0,0.0,1598,2400
-order_items,quantity,int64,0,0.0,8,7
-order_items,unit_price,float64,0,0.0,501330,1138.22
-order_items,discount_amount,float64,0,0.0,204449,0.0
-order_items,promo_id,object,438353,61.34,50,
-order_items,promo_id_2,object,714463,99.97,2,

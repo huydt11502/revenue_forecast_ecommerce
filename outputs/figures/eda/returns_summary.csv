@@ -1,8 +1,0 @@
-table,column,dtype,null_count,null_pct,unique,sample
-returns,return_id,object,0,0.0,39939,RET-000001
-returns,order_id,int64,0,0.0,36062,2
-returns,product_id,int64,0,0.0,1286,609
-returns,return_date,object,0,0.0,3806,2012-07-25
-returns,return_reason,object,0,0.0,5,late_delivery
-returns,return_quantity,int64,0,0.0,8,6
-returns,refund_amount,float64,0,0.0,39560,52458.01

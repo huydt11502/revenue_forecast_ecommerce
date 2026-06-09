@@ -1,4 +1,0 @@
-table,column,dtype,null_count,null_pct,unique,sample
-sales,Date,object,0,0.0,3833,2012-07-04
-sales,Revenue,float64,0,0.0,3833,5123547.94
-sales,COGS,float64,0,0.0,3833,3982991.19
