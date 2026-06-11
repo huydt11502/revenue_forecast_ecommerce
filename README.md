@@ -206,7 +206,7 @@ Xu hướng này trùng với giai đoạn Streetwear tăng giá.
 
 # 2. Kết quả mô hình
 
-![Model Comparision](outputs\figures\model\model_comparison.png)
+![Model Comparision](outputs/figures/model/model_comparison.png)
 
 ### Prophet (Baseline)
 
@@ -232,7 +232,7 @@ Dashboard được xây dựng trên Power BI nhằm trực quan hóa toàn bộ
 
 ## Product Dashboard
 
-![Product Dashboard](reports\powerbi\image\product\product_dashboard.png)
+![Product Dashboard](reports/powerbi/image/product/product_dashboard.png)
 
 Bao gồm:
 
